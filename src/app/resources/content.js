@@ -1,16 +1,16 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Deep",
+  lastName: "Bikram Thapa Chhetri",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Software Entrepreneur",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "deepbikram01@gmail.com",
+  location: "Asia/Kathmandu", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Nepali"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,17 +30,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/deepbikram",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/deepbikram/",
   },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "https://x.com/deepbikram",
   },
   {
     name: "Email",
@@ -55,16 +55,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building products people love to use.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">Enotes Nepal</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Deep, a software Entrepreneur from Nepal, where I craft platform  <br /> with my own user experiences. 
     </>
   ),
 };
@@ -90,9 +89,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Deep is a Nepal-based software Entrepreneur with a passion to build innovative solutions. Building innovative, human-centered solutions that bridge design and technology.
+ Passionate about using software to solve real-world problems and empower people.
       </>
     ),
   },
@@ -101,98 +99,172 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Enotes Nepal",
+        timeframe: "2023 - Present",
+        role: "Founder & CEO",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+        Founded <strong>Enotes Nepal</strong>, a digital learning platform that has grown to <strong>100,000+ monthly active users</strong>, becoming a leading digital learning platform in Nepal.
+      </>,
+      <>
+        Integrated <strong>AI-driven tools</strong> into Enotes Nepal’s design and development workflows, enabling the team to iterate <strong>50% faster</strong> and significantly reduce content turnaround time.
+      </>,
+      <>
+        Built and scaled a <strong>remote-first product and lead </strong>a content growth to over 20M views in a single reel, fostering a culture of experimentation, feedback, and mission-driven growth across Nepal.
+      </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "Enotes Nepal",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "OverlayAI",
+        timeframe: "2025 - Present",
+        role: "Founder & Lead Engineer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+           <>
+      Founded <strong>OverlayAI</strong>, an AI-powered productivity platform that integrates seamlessly across desktop environments, offering users intelligent support during everyday tasks—including interviews, writing, and research.
+    </>,
+    <>
+      Developed a comprehensive <strong>design system</strong> that unified the brand across multiple touchpoints, improving design consistency by <strong>40%</strong> and accelerating development speed.
+    </>,
+    <>
+      Engineered features to help users develop a deeper, habitual use of AI as a supportive "boundary" layer—guiding them contextually through conversations, decisions, and content creation.
+    </>,
         ],
         images: [],
       },
+      {
+        company: "LetsTechIT (LTI)",
+        timeframe: "2022 - 2023",
+role: "Chief Operating Officer (COO)",
+        achievements: [
+          <>
+      Co-led the launch of <strong>Let’s Tech It</strong> with the team of 10 people, a platform aimed at simplifying tech education and fostering a community of young learners and creators.
+    </>,
+    <>
+      Oversaw operations, content pipelines, and early product development efforts while collaborating with designers and educators to shape the platform vision.
+    </>,
+    <>
+      Despite a strong initial effort, the platform faced market traction challenges. We made a strategic decision to shut down and redirect our energy toward higher-impact ventures like <strong>Enotes Nepal</strong> and <strong>OverlayAI</strong>.
+    </>,
+    <>
+      Gained first-hand experience in product-market fit, team alignment, and the importance of timing—lessons that continue to inform my approach as a founder and builder.
+    </>,        ],        images: [],
+      },      
     ],
   },
+
+  projects: {
+    display: true, // set to false to hide this section
+    title: "Projects I'm Working On",
+    initiatives: [
+      {
+        name: "AI-Powered Research Assistant",
+        description: (
+          <>
+            Building a smart research assistant that helps users gather, summarize, and analyze
+            complex information in real-time—empowering students, founders, and knowledge workers to
+            think and write faster using AI.
+          </>
+        ),
+      },
+      {
+        name: "Mental Health Application",
+        description: (
+          <>
+            Designing an AI companion that supports mental well-being through emotionally aware
+            conversations, voice synthesis, and memory-based interaction. The app is built to replicate
+            comforting voices or personalities from past experiences to provide therapeutic support.
+          </>
+        ),
+      },
+      {
+        name: "Social Media App Blocker",
+        description: (
+          <>
+            Developing a cross-platform blocker that helps users break free from addictive social media
+            loops. The tool combines psychology-based nudges, habit tracking, and focused UI to promote
+            digital wellness and time freedom.
+          </>
+        ),
+      },
+    ],
+  },
+
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "New Horizon English Boarding School",
+        description: <>Studied Optional Math & Computer Science and completed SEE(Secondary level examination)</>,
+      },      {
+        name: "New Horizon Institute",
+        description: <>Studied Physics, Chemistry, Mathematics & Computer Science and completed SLC (Secondary Level Examination)</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
+    {
+      title: "Next.js",
+      description: <>Building production-grade web apps with API routes, ISR, and full-stack logic.</>,
+      images: [],
+    },
+    {
+      title: "React + Tailwind CSS",
+      description: <>Creating responsive, high-performance UIs with reusable components and utility-first styling.</>,
+      images: [],
+    },
+    {
+      title: "Node.js & Express",
+      description: <>Developing scalable backends and REST APIs powering real-time functionality.</>,
+      images: [],
+    },
+    {
+      title: "Python",
+      description: <>Used across AI workflows, backend logic, automation, and rapid prototyping.</>,
+      images: [],
+    },
+    {
+      title: "OpenAI & LangChain",
+      description: <>Building AI assistants with memory, agents, prompt chaining, and natural language tools.</>,
+      images: [],
+    },
+    {
+      title: "Firebase & Supabase",
+      description: <>Implementing auth, databases, and edge functions in full-stack applications.</>,
+      images: [],
+    },
+    {
+      title: "Vector Databases (Pinecone, Weaviate)",
+      description: <>Powering semantic memory and context-aware responses in AI research tools.</>,
+      images: [],
+    },
+    {
+      title: "Text-to-Speech & Whisper",
+      description: <>Creating voice-based AI experiences using TTS (e.g., ElevenLabs) and STT (Whisper).</>,
+      images: [],
+    },
+    {
+      title: "Framer Motion",
+      description: <>Bringing interfaces to life with smooth, natural animations and transitions.</>,
+      images: [],
+    },    {
+      title: "Git & GitHub",
+      description: <>Version control, collaboration, and open-source contribution workflow.</>,
+      images: [],
+    },
+  ],
   },
 };
 
