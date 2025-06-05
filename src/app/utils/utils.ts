@@ -37,14 +37,13 @@ function readMDXFile(filePath: string) {
 
   const rawContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(rawContent);
-
   const metadata: Metadata = {
     title: data.title || "",
     publishedAt: data.publishedAt,
     summary: data.summary || "",
     image: data.image || "",
     images: data.images || [],
-    tag: data.tag || [],
+    tag: data.tag || "",
     team: data.team || [],
     link: data.link || "",
   };

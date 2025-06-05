@@ -30,9 +30,13 @@ const SmartImage: React.FC<SmartImageProps> = ({
   priority,
   sizes = "100vw",
   ...rest
-}) => {
-  const [isEnlarged, setIsEnlarged] = useState(false);
+}) => {  const [isEnlarged, setIsEnlarged] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const imageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleClick = () => {
     if (enlarge) {
@@ -73,9 +77,8 @@ const SmartImage: React.FC<SmartImageProps> = ({
       document.body.style.overflow = "auto";
     };
   }, [isEnlarged]);
-
   const calculateTransform = () => {
-    if (!imageRef.current) return {};
+    if (!imageRef.current || typeof window === 'undefined') return {};
 
     const rect = imageRef.current.getBoundingClientRect();
     const scaleX = window.innerWidth / rect.width;
@@ -119,14 +122,13 @@ const SmartImage: React.FC<SmartImageProps> = ({
         fillWidth
         overflow="hidden"
         zIndex={0}
-        cursor={enlarge ? "interactive" : ""}
-        style={{
+        cursor={enlarge ? "interactive" : ""}        style={{
           outline: "none",
           isolation: "isolate",
           height: aspectRatio ? "" : height ? `${height}rem` : "100%",
           aspectRatio,
           borderRadius: isEnlarged ? "0" : undefined,
-          ...calculateTransform(),
+          ...(mounted ? calculateTransform() : {}),
         }}
         onClick={handleClick}
         {...rest}

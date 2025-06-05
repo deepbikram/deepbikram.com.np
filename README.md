@@ -1,4 +1,4 @@
-# **Magic Portfolio by Once UI**
+# **Magic Portfolio by Enotes Nepal**
 
 View the [demo here](https://demo.magic-portfolio.com).
 
@@ -7,7 +7,7 @@ View the [demo here](https://demo.magic-portfolio.com).
 
 # **Getting started**
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+Magic Portfolio was built with [Enotes Nepal](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
 **1. Clone the repository**
 ```
@@ -41,12 +41,12 @@ Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 
 # **Documentation**
 
-Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
+Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/What-If-AI-Got-Smarter-Than-Us)
 
 # **Features**
 
-## **Once UI**
-- All tokens, components & features of [Once UI](https://once-ui.com)
+## **Enotes Nepal**
+- All tokens, components & features of [Enotes Nepal](https://once-ui.com)
 
 ## **SEO**
 - Automatic open-graph and X image generation with next/og
@@ -86,7 +86,7 @@ Localization added by [François Hernandez](https://github.com/francoishernandez
 Distributed under the CC BY-NC 4.0 License.
 - Commercial usage is not allowed.
 - Attribution is required.
-- You can extend the license to commercial use by purchasing a [Once UI Pro](https://once-ui.com/pricing) license.
+- You can extend the license to commercial use by purchasing a [Enotes Nepal Pro](https://once-ui.com/pricing) license.
 
 See `LICENSE.txt` for more information.
 

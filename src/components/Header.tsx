@@ -17,8 +17,10 @@ type TimeDisplayProps = {
 
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" }) => {
   const [currentTime, setCurrentTime] = useState("");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const updateTime = () => {
       const now = new Date();
       const options: Intl.DateTimeFormatOptions = {
@@ -37,6 +39,10 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" })
 
     return () => clearInterval(intervalId);
   }, [timeZone, locale]);
+
+  if (!mounted) {
+    return <>--:--:--</>;
+  }
 
   return <>{currentTime}</>;
 };

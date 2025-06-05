@@ -53,13 +53,12 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building products people love to use.</>,
-  featured: {
+  headline: <>Building products people love to use.</>,  featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Enotes Nepal</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/building-enotes-nepal-to-become-largest-digital-learning-platform",
   },
   subline: (
     <>
@@ -82,7 +81,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/deepbikram",
   },
   intro: {
     display: true,
@@ -112,11 +111,10 @@ const about = {
       <>
         Built and scaled a <strong>remote-first product and lead </strong>a content growth to over 20M views in a single reel, fostering a culture of experimentation, feedback, and mission-driven growth across Nepal.
       </>,
-        ],
-        images: [
+        ],        images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/Enotes-Nepal.png",
             alt: "Enotes Nepal",
             width: 16,
             height: 9,
@@ -136,7 +134,26 @@ const about = {
     </>,
     <>
       Engineered features to help users develop a deeper, habitual use of AI as a supportive "boundary" layer—guiding them contextually through conversations, decisions, and content creation.
-    </>,
+    </>,        ],
+        images: [],
+      },
+      {
+        company: "AI Researcher",
+        timeframe: "2025 - Present",
+        role: "Co-founder & AI Research Lead",
+        achievements: [
+          <>
+            Specialized in developing <strong>multi-LLM orchestration systems</strong> that enable different AI models to interact and collaborate, creating more comprehensive and intelligent responses.
+          </>,
+          <>
+            Built intelligent agents capable of <strong>video analysis, web research, and blog content processing</strong> to provide contextually relevant, user-centric responses across multiple data sources.
+          </>,
+          <>
+            Pioneered <strong>cross-modal AI interactions</strong> where large language models collaborate to watch videos, search the web, analyze content, and synthesize information in real-time for enhanced user experiences.
+          </>,
+          <>
+            Developed proprietary algorithms for AI models to <strong>understand user intent</strong> and deliver personalized responses by combining insights from multimedia content, web searches, and written materials.
+          </>,
         ],
         images: [],
       },
@@ -271,7 +288,7 @@ role: "Chief Operating Officer (COO)",
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Breaking down big ideas in tech, philosophy, and the chaos of modern life.",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route

@@ -5,8 +5,8 @@ import classNames from "classnames";
 
 const defaultCharset = ["X", "$", "@", "a", "H", "z", "o", "0", "y", "#", "?", "*", "0", "1", "+"];
 
-function getRandomCharacter(charset: string[]): string {
-  const randomIndex = Math.floor(Math.random() * charset.length);
+function getRandomCharacter(charset: string[], seed: number): string {
+  const randomIndex = Math.floor((seed * 9301 + 49297) % 233280 / 233280 * charset.length);
   return charset[randomIndex];
 }
 
@@ -36,24 +36,23 @@ function createEventHandler(
       INITIAL_RANDOM_DURATION: 600,
     },
   };
-
   const { BASE_DELAY, REVEAL_DELAY, INITIAL_RANDOM_DURATION } = speedSettings[speed];
 
+  let seedCounter = 0;
   const generateRandomText = () =>
     originalText
       .split("")
-      .map((char) => (char === " " ? " " : getRandomCharacter(charset)))
+      .map((char) => (char === " " ? " " : getRandomCharacter(charset, seedCounter++)))
       .join("");
 
   return async () => {
     if (inProgress) return;
 
-    setInProgress(true);
+    setInProgress(true);    let randomizedText = generateRandomText();
+    const startTime = performance.now();
+    const endTime = startTime + INITIAL_RANDOM_DURATION;
 
-    let randomizedText = generateRandomText();
-    const endTime = Date.now() + INITIAL_RANDOM_DURATION;
-
-    while (Date.now() < endTime) {
+    while (performance.now() < endTime) {
       setText(randomizedText);
       await new Promise((resolve) => setTimeout(resolve, BASE_DELAY));
       randomizedText = generateRandomText();

@@ -30,12 +30,14 @@ const ToastProvider: React.FC<{
   children: ReactNode;
 }> = ({ children }) => {
   const [toasts, setToasts] = useState<Toast[]>([]);
+  const [idCounter, setIdCounter] = useState(0);
 
   const addToast = (toast: Omit<Toast, "id">) => {
     const newToast: Toast = {
-      id: Math.random().toString(36).substring(7),
+      id: `toast-${idCounter}`,
       ...toast,
     };
+    setIdCounter(prev => prev + 1);
     setToasts((prev) => [...prev, newToast]);
   };
 

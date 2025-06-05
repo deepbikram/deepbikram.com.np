@@ -71,10 +71,9 @@ const HoloFx: React.FC<HoloFxProps> = ({ children, shine, burn, texture, ...rest
     mask: getMaskStyle(texture?.mask),
     ...texture,
   };
-
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
-      const now = Date.now();
+      const now = performance.now();
       if (now - lastCallRef.current < 16) return;
       lastCallRef.current = now;
 

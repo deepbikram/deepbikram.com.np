@@ -53,9 +53,9 @@ const DatePicker = forwardRef<HTMLDivElement, DatePickerProps>(
       onHover,
       ...rest
     },
-    ref,
-  ) => {
-    const today = new Date();
+    ref,  ) => {
+    const [mounted, setMounted] = useState(false);
+    const [today, setToday] = useState(new Date(2025, 0, 1)); // Default fallback date
     const [selectedDate, setSelectedDate] = useState<Date | undefined>(value);
     const [selectedTime, setSelectedTime] = useState<
       | {
@@ -69,11 +69,21 @@ const DatePicker = forwardRef<HTMLDivElement, DatePickerProps>(
     const [isTransitioning, setIsTransitioning] = useState(true);
 
     const [currentMonth, setCurrentMonth] = useState<number>(
-      value ? value.getMonth() : today.getMonth(),
+      value ? value.getMonth() : 0,
     );
     const [currentYear, setCurrentYear] = useState<number>(
-      value ? value.getFullYear() : today.getFullYear(),
+      value ? value.getFullYear() : 2025,
     );
+
+    useEffect(() => {
+      setMounted(true);
+      const now = new Date();
+      setToday(now);
+      if (!value) {
+        setCurrentMonth(now.getMonth());
+        setCurrentYear(now.getFullYear());
+      }
+    }, [value]);
 
     useEffect(() => {
       if (typeof propCurrentMonth === "number") {

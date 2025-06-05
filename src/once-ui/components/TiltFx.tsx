@@ -10,17 +10,17 @@ interface TiltFxProps extends React.ComponentProps<typeof Flex> {
 
 const TiltFx: React.FC<TiltFxProps> = ({ children, ...rest }) => {
   const ref = useRef<HTMLDivElement>(null);
-  let lastCall = 0;
+  const lastCallRef = useRef(0);
   let resetTimeout: NodeJS.Timeout;
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if ("ontouchstart" in window) return;
+    if (typeof window !== 'undefined' && "ontouchstart" in window) return;
 
     clearTimeout(resetTimeout);
 
-    const now = Date.now();
-    if (now - lastCall < 16) return;
-    lastCall = now;
+    const now = performance.now();
+    if (now - lastCallRef.current < 16) return;
+    lastCallRef.current = now;
 
     const element = ref.current;
     if (!element) return;
