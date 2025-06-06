@@ -183,7 +183,7 @@ role: "Chief Operating Officer (COO)",
     title: "Projects I'm Working On",
     initiatives: [
       {
-        name: "AI-Powered Research Assistant",
+        name: "AI-Powered Research Assistant (SearchQi)",
         description: (
           <>
             Building a smart research assistant that helps users gather, summarize, and analyze
@@ -224,7 +224,7 @@ role: "Chief Operating Officer (COO)",
         description: <>Studied Optional Math & Computer Science and completed SEE(Secondary level examination)</>,
       },      {
         name: "New Horizon Institute",
-        description: <>Studied Physics, Chemistry, Mathematics & Computer Science and completed SLC (Secondary Level Examination)</>,
+        description: <>Studied Physics, Chemistry, Mathematics, Computer Science & Robotics and completed SLC (Secondary Level Examination)</>,
       },
     ],
   },
@@ -260,11 +260,6 @@ role: "Chief Operating Officer (COO)",
     {
       title: "Firebase & Supabase",
       description: <>Implementing auth, databases, and edge functions in full-stack applications.</>,
-      images: [],
-    },
-    {
-      title: "Vector Databases (Pinecone, Weaviate)",
-      description: <>Powering semantic memory and context-aware responses in AI research tools.</>,
       images: [],
     },
     {
