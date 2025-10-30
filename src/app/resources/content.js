@@ -55,7 +55,8 @@ const home = {
   label: "Home",
   title: `${person.name}`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building products people love to use.</>,  featured: {
+  headline: <>Building products people love to use.</>,
+  featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Enotes Nepal</strong></>,
     href: "/work/building-enotes-nepal-to-become-largest-digital-learning-platform",
@@ -159,23 +160,21 @@ const about = {
            <>
 Designed a high‑performance typing session engine in React + TypeScript with debounced input handling and precise timers to compute WPM, accuracy, and consistency in real time.    </>,
           <>
-          <>
           Planned and building a real‑time multiplayer typing mode using WebSocket / realtime APIs to enable low‑latency competitive & cooperative sessions, matchmaking, synchronized race state, live leaderboards, and replayable sessions.
-          </>
           </>,
           <>
           Added features like customizable themes, sound feedback, and typing history tracking.
-
-          </>],
+          </>
+        ],
         images: [
           {
-            src: "/images/deeptype.jpeg",
+            src: "/images/deeptype.png",
             alt: "Deeptype",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/deeptype2.jpeg",
+            src: "/images/deeptype2.png",
             alt: "Deeptype",
             width: 16,
             height: 9,
@@ -203,7 +202,7 @@ Designed a high‑performance typing session engine in React + TypeScript with d
           },
           {
             src: "/images/overlayai1.png",
-            alt: "OverlayAI",
+            alt: "OverlayAI1",
             width: 16,
             height: 9,
           },
@@ -325,7 +324,8 @@ role: "Chief Operating Officer (COO)",
       {
         name: "New Horizon English Boarding School",
         description: <>Studied Optional Math & Computer Science and completed SEE(Secondary level examination)</>,
-      },      {
+      },
+      {
         name: "New Horizon Institute",
         description: <>Studied Physics, Chemistry, Mathematics & Computer Science and completed SLC (Secondary Level Examination)</>,
       },
