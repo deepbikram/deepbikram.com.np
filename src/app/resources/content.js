@@ -195,13 +195,13 @@ Designed a high‑performance typing session engine in React + TypeScript with d
            ],
         images: [
           {
-            src: "/images/overlayai.png",
+            src: "/images/OverlayAI.png",
             alt: "OverlayAI",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/overlayai1.png",
+            src: "/images/OverlayAI1.png",
             alt: "OverlayAI1",
             width: 16,
             height: 9,
