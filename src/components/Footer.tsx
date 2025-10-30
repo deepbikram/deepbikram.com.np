@@ -32,6 +32,12 @@ export const Footer = () => {
             >
               Enotes Nepal
             </SmartLink>
+            &
+            <SmartLink
+            href="https://band9prep.com"
+            >
+Band9Prep
+            </SmartLink>
           </Text>
         </Text>
         <Flex gap="16">

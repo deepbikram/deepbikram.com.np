@@ -97,6 +97,32 @@ const about = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
+       {
+        company: "Band9Prep",
+        timeframe: "2025 - Present",
+        role: "Research to Development",
+        achievements: [
+           <>
+      Founded <strong>Band9prep</strong>, an AI-powered IELTS practice platform that focuses on 4 modules i.e Listening, Reading, Writing, and Speaking to help users achieve their desired band scores through personalized practice and feedback.
+    </>,
+    <>Reached over 1,000+ active learners within the first 3 months through social campaigns with zero invested on ads.</>,
+
+       ],
+        images: [
+          {
+            src: "/images/band9prep.png",
+            alt: "Band9Prep",
+            width: 16,
+            height: 9,
+        },
+        {
+          src: "/images/band9prep-login.png",
+          alt: "Band9Prep Login",
+          width: 16,
+          height: 9,
+        }
+        ],
+      },
       {
         company: "Enotes Nepal",
         timeframe: "2023 - Present",
@@ -106,11 +132,9 @@ const about = {
         Founded <strong>Enotes Nepal</strong>, a digital learning platform that has grown to <strong>100,000+ monthly active users</strong>, becoming a leading digital learning platform in Nepal.
       </>,
       <>
-        Integrated <strong>AI-driven tools</strong> into Enotes Nepal’s design and development workflows, enabling the team to iterate <strong>50% faster</strong> and significantly reduce content turnaround time.
+        Built and scaled a <strong>instragram page </strong>a content growth to over 20M views in a single reel, fostering a culture of experimentation, feedback, and mission-driven growth across Nepal.
       </>,
-      <>
-        Built and scaled a <strong>remote-first product and lead </strong>a content growth to over 20M views in a single reel, fostering a culture of experimentation, feedback, and mission-driven growth across Nepal.
-      </>,
+      <>Focused on user retention and accessibility in education.</>,
         ],        images: [
           // optional: leave the array empty if you don't want to display images
           {
@@ -119,26 +143,92 @@ const about = {
             width: 16,
             height: 9,
           },
+          {
+            src: "/images/instagram.png",
+            alt: "Instagram Growth",
+            width: 16,
+            height: 9,
+          },
         ],
       },
       {
-        company: "OverlayAI",
-        timeframe: "2025 - Present",
-        role: "Founder & Lead Engineer",
+        company: "Deep Type",
+        timeframe: "2025",
+        role: "Developer",
         achievements: [
            <>
-      Founded <strong>OverlayAI</strong>, an AI-powered productivity platform that integrates seamlessly across desktop environments, offering users intelligent support during everyday tasks—including interviews, writing, and research.
+Designed a high‑performance typing session engine in React + TypeScript with debounced input handling and precise timers to compute WPM, accuracy, and consistency in real time.    </>,
+          <>
+          <>
+          Planned and building a real‑time multiplayer typing mode using WebSocket / realtime APIs to enable low‑latency competitive & cooperative sessions, matchmaking, synchronized race state, live leaderboards, and replayable sessions.
+          </>
+          </>,
+          <>
+          Added features like customizable themes, sound feedback, and typing history tracking.
+
+          </>],
+        images: [
+          {
+            src: "/images/deeptype.jpeg",
+            alt: "Deeptype",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/deeptype2.jpeg",
+            alt: "Deeptype",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "OverlayAI (Ditched by Cluely)",
+        timeframe: "2025",
+        role: "Lead Engineering & Product Designer",
+        achievements: [
+           <>
+      Built <strong>OverlayAI</strong>, an AI-powered desktop productivity platform built using electorn that integrates seamlessly across desktop environments, offering users intelligent support during everyday tasks including interviews, writing, and research.
     </>,
     <>
       Developed a comprehensive <strong>design system</strong> that unified the brand across multiple touchpoints, improving design consistency by <strong>40%</strong> and accelerating development speed.
     </>,
-    <>
-      Engineered features to help users develop a deeper, habitual use of AI as a supportive "boundary" layer—guiding them contextually through conversations, decisions, and content creation.
-    </>,        ],
-        images: [],
+           ],
+        images: [
+          {
+            src: "/images/overlayai.png",
+            alt: "OverlayAI",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/overlayai1.png",
+            alt: "OverlayAI",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
-        company: "AI Researcher",
+        company: "Deep Journal",
+        timeframe: "2024",
+        role: "Lead Engineering & Product Designer",
+        achievements: [
+           <>
+      Built <strong>Deep Journal</strong>, an AI-powered journaling platform that helps users reflect on their thoughts and emotions through guided prompts and insights.
+    </>,
+       ],
+        images: [
+          {
+            src: "/images/deepjournal.png",
+            alt: "Deep Journal",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "AI Researcher Platform",
         timeframe: "2025 - Present",
         role: "Co-founder & AI Research Lead",
         achievements: [
@@ -155,7 +245,20 @@ const about = {
             Developed proprietary algorithms for AI models to <strong>understand user intent</strong> and deliver personalized responses by combining insights from multimedia content, web searches, and written materials.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/airesearcher.png",
+            alt: "AI Researcher Platform",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/airesearcher2.png",
+            alt: "AI Researcher Platform",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "LetsTechIT (LTI)",
@@ -172,7 +275,7 @@ role: "Chief Operating Officer (COO)",
       Despite a strong initial effort, the platform faced market traction challenges. We made a strategic decision to shut down and redirect our energy toward higher-impact ventures like <strong>Enotes Nepal</strong> and <strong>OverlayAI</strong>.
     </>,
     <>
-      Gained first-hand experience in product-market fit, team alignment, and the importance of timing—lessons that continue to inform my approach as a founder and builder.
+      Gained first hand experience in product market fit, team alignment, and the importance of timing lessons that continue to inform my approach as a founder and builder.
     </>,        ],        images: [],
       },      
     ],
@@ -235,6 +338,11 @@ role: "Chief Operating Officer (COO)",
     {
       title: "Next.js",
       description: <>Building production-grade web apps with API routes, ISR, and full-stack logic.</>,
+      images: [],
+    },
+    {
+      title: "Typescript",
+      description: <>Designed and developed 10+ web application enhancing user interaction.</>,
       images: [],
     },
     {
