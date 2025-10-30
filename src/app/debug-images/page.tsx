@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 
 // Add this to your about page or any page to debug
