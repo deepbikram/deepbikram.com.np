@@ -89,7 +89,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Deep is a Nepal-based software Entrepreneur with a passion to build innovative solutions. Building innovative, human-centered solutions that bridge design and technology.
+        I am a Nepal based software Entrepreneur with a passion to build innovative solutions. Building innovative, human-centered solutions that bridge design and technology.
  Passionate about using software to solve real-world problems and empower people.
       </>
     ),
