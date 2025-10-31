@@ -102,6 +102,7 @@ const about = {
         company: "Band9Prep",
         timeframe: "2025 - Present",
         role: "Research to Development",
+        link: "https://www.band9prep.com",
         achievements: [
            <>
       Founded <strong>Band9prep</strong>, an AI-powered IELTS practice platform that focuses on 4 modules i.e Listening, Reading, Writing, and Speaking to help users achieve their desired band scores through personalized practice and feedback.
@@ -128,6 +129,7 @@ const about = {
         company: "Enotes Nepal",
         timeframe: "2023 - Present",
         role: "Founder & CEO",
+        link: "https://www.enotesnepal.com",
         achievements: [
           <>
         Founded <strong>Enotes Nepal</strong>, a digital learning platform that has grown to <strong>100,000+ monthly active users</strong>, becoming a leading digital learning platform in Nepal.
@@ -156,6 +158,7 @@ const about = {
         company: "Deep Type",
         timeframe: "2025",
         role: "Developer",
+        link: "https://deeptype.tech",
         achievements: [
            <>
 Designed a high‑performance typing session engine in React + TypeScript with debounced input handling and precise timers to compute WPM, accuracy, and consistency in real time.    </>,
@@ -212,6 +215,7 @@ Designed a high‑performance typing session engine in React + TypeScript with d
         company: "Deep Journal",
         timeframe: "2024",
         role: "Lead Engineering & Product Designer",
+        link: "https://deepjournal.vercel.app",
         achievements: [
            <>
       Built <strong>Deep Journal</strong>, an AI-powered journaling platform that helps users reflect on their thoughts and emotions through guided prompts and insights.
