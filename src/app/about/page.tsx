@@ -175,6 +175,23 @@ export default function About() {
                         </React.Fragment>
                     ),
                 )}
+                <Button
+                    className="s-flex-hide"
+                    href="/cv.pdf"
+                    prefixIcon="document"
+                    label="CV"
+                    size="s"
+                    variant="secondary"
+                    target="_blank"
+                />
+                <IconButton
+                    className="s-flex-show"
+                    size="l"
+                    href="/cv.pdf"
+                    icon="document"
+                    variant="secondary"
+                    target="_blank"
+                />
               </Flex>
             )}
           </Column>

@@ -35,12 +35,12 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/deepbikram/",
+    link: "https://linkedin.com/in/deepbikram/",
   },
   {
     name: "X",
     icon: "x",
-    link: "https://x.com/deepbikram",
+    link: "https://x.com/mrdeepbikram",
   },
   {
     name: "Email",
