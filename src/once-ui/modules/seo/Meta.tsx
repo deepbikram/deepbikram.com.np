@@ -12,6 +12,7 @@ export interface MetaProps {
     name: string;
     url?: string;
   };
+  noIndex?: boolean;
 }
 
 export function generateMetadata({
@@ -23,6 +24,7 @@ export function generateMetadata({
   image,
   publishedTime,
   author,
+  noIndex = false,
 }: MetaProps): NextMetadata {
   const normalizedBaseURL = baseURL.endsWith("/") ? baseURL.slice(0, -1) : baseURL;
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
@@ -40,6 +42,7 @@ export function generateMetadata({
   return {
     title,
     description,
+    ...(noIndex ? { robots: { index: false, follow: false } } : {}),
     openGraph: {
       title,
       description,
