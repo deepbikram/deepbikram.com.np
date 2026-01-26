@@ -42,7 +42,7 @@ export function generateMetadata({
   return {
     title,
     description,
-    ...(noIndex ? { robots: { index: false, follow: false } } : {}),
+    ...(noIndex ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title,
       description,
